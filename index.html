@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Поиск сокровищ</title>
+</head>
+<body>
+    <header class="rounded">
+        <img src="./gameimages/treasure chest 2.JPEG" alt="Logo" id="logo">
+        <h1>Поиск сокровищ</h1>
+        <div class="userInfo grayText">[]</div>
+    </header>
+    <section>
+        <div class="gameArea rounded">
+            <div class="line">
+                <div class="gameBlock "></div>
+                <div class="gameBlock "></div>
+                <div class="gameBlock"></div>
+                <div class="gameBlock"></div>
+                <div class="gameBlock"></div>
+                <div class="coef grayText"> x 1.20</div>
+            </div>
+        </div>
+        <div class="bet rounded">
+            <h2>Количество баллов</h2>
+            <div class="points">
+                <div class="point active">1000</div>
+                <div class="point">2000</div>
+                <div class="point">5000</div>
+                <div class="point">10000</div>
+            </div>
+            <button id="gameButton" data-action="start">Играть</button>
+        </div>
+    </section>
+    <script src="./functionality/script.js"></script>
+</body>
+</html>

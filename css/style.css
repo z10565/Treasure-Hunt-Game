@@ -1,0 +1,124 @@
+:root {
+    --dark-purple: #114F5C;
+    --light-purple: #135B6C;
+    --lighter-purple: #797e9a;
+    --green: #8451CD;
+    --orange: #099DEB;
+    --white: #ffffff;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: var(--dark-purple);
+    color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+.rounded {
+    background-color:var(--light-purple);
+    border-radius: 20px;
+    padding: 20px;
+}
+.grayText {
+    color: var(--lighter-purple);
+    font-weight: bold;
+}
+header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+h1 {
+    text-transform: uppercase;
+    font-size: 24px;
+}
+#logo {
+    width: 100px;
+    border-radius: 15px;
+}
+section {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap-reverse;
+}
+h2 {
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+}
+.points {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.point {
+    font-weight: bold;
+    background-color: var(--dark-purple);
+    border-radius: 20px;
+    text-align: center;
+    line-height: 40px;
+    flex-basis: 100px;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+.point.active {
+    background-color: var(--orange);
+}
+#gameButton {
+    background-color: var(--green);
+    color: var(--white);
+    border: 0;
+    width: 100%;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 20px;
+}
+#gameButton[disabled] {
+    opacity: 0.6;
+}
+.bet {
+    flex-grow: 1;
+}
+.gameArea {
+    flex-basis: 450px;
+    flex-grow: 1000;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 5px;
+}
+.line {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+.gameBlock {
+    width: 70px;
+    height: 70px;
+    background-color: var(--dark-purple);
+    border-radius: 5px;
+}
+.gameBlock.active {
+    background-color: var(--lighter-purple);
+    cursor: pointer;
+}
+.gameBlock.active:hover {
+    filter: brightness(1.2);
+}
+.gameBlock.diamond {
+    /* background-image: url('../gameimages/images/diamond_block.png'); */
+    background-image: url('../gameimages/treasure.jpg');
+    background-size: contain;
+}
+.gameBlock.skeleton {
+    /* background-image: url('../gameimages/images/death_block.png'); */
+    background-image: url('../gameimages/lose.jpg');
+    background-size: contain;
+}
